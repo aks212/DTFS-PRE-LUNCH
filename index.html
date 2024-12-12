@@ -1,5 +1,5 @@
 <html><head>
-<title>DTFS - Difi Trade Finance Solutions</title>
+<<title>DTFS - Defi Trade Finance Solutions</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdn.tailwindcss.com"></script>
@@ -353,6 +353,28 @@ body {
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2), 
               0 10px 25px rgba(0, 0, 0, 0.1);
 }
+
+/* Add to your existing styles */
+.aspect-w-16 {
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+.aspect-w-16 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 800px;
+}
+
+@media (max-width: 768px) {
+    .aspect-w-16 iframe {
+        position: relative;
+        min-height: 1200px;
+    }
+}
 </style>
 </head>
 
@@ -368,12 +390,14 @@ body {
 
             <!-- Desktop Navigation (now always visible) -->
             <div class="flex items-center space-x-4">
-               <a href="#Startup" class="nav-link bg-gradient-to-r from-yellow-400 to-orange-500 px-4 py-2 rounded-full text-black font-bold hover:from-yellow-500 hover:to-orange-600 transition-all duration-300 animate-pulse"> Startup </a>
-              <a href="#features" class="nav-link">Features</a>
+                <a href="#features" class="nav-link">Features</a>
                 <a href="#financing" class="nav-link">Financing</a>
+                <a href="#startup" class="nav-link">Startup</a>
                 <a href="#benefits" class="nav-link">Benefits</a>
                 <a href="#faq" class="nav-link">FAQ</a>
-                <!-- Add Airdrop button -->
+                <a href="#demo" class="nav-link bg-gradient-to-r from-green-400 to-blue-500 px-4 py-2 rounded-full text-black font-bold hover:from-green-500 hover:to-blue-600 transition-all duration-300">
+                  Demo
+                </a>
                 <a href="#airdrop" class="nav-link bg-gradient-to-r from-yellow-400 to-orange-500 px-4 py-2 rounded-full text-black font-bold hover:from-yellow-500 hover:to-orange-600 transition-all duration-300 animate-pulse">
                     Airdrop
                 </a>
@@ -424,6 +448,11 @@ body {
                     <span class="label">Seconds</span>
                 </div>
             </div>
+            <div class="mt-8 mb-8">
+                <a href="#demo" class="inline-block bg-gradient-to-r from-green-400 to-blue-500 px-8 py-4 rounded-full text-black text-xl font-bold hover:from-green-500 hover:to-blue-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                    🚀 Launch Demo
+                </a>
+            </div>
         </div>
 
         <div class="space-y-6">
@@ -464,7 +493,7 @@ body {
                 </svg>
                 <h3 class="text-xl font-bold">Flexible Trade Financing</h3>
             </div>
-            <p class="text-gray-300">Custom solutions for import/export finance, supply chain finance, and Shariah-compliant financing.</p>
+            <p class="text-gray-300">Custom solutions for import/export finance, supply chain finance, and non-interest financing.</p>
         </div>
 
         <!-- Tailored Financing -->
@@ -527,7 +556,7 @@ body {
         <div class="bg-white/5 backdrop-blur-lg rounded-xl p-8 border border-white/10 card-3d">
             <div class="flex items-center mb-6">
                 <svg class="w-12 h-12 text-blue-400 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 012 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2v-14a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2v-14a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
                 </svg>
                 <h3 class="text-xl font-bold">Analytics & Reporting</h3>
             </div>
@@ -613,7 +642,7 @@ body {
                 </svg>
                 <h3 class="text-2xl font-bold">Interest-Free Finance</h3>
             </div>
-            <p class="text-gray-300">non-interest financing options with no hidden fees or interest charges, perfect for ethical business operations.</p>
+            <p class="text-gray-300">Shariah-compliant financing options with no hidden fees or interest charges, perfect for ethical business operations.</p>
         </div>
 
         <!-- Factoring -->
@@ -630,7 +659,7 @@ body {
 </section>
 
 <!-- Startup Services Section -->
-<section id="Startup" class="container mx-auto px-4 py-20">
+<section id="startup" class="container mx-auto px-4 py-20">
     <h2 class="text-4xl font-bold text-center mb-16">Startup Services</h2>
     <div class="text-center mb-12">
         <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
@@ -673,7 +702,7 @@ body {
                 </svg>
                 <h4 class="text-xl font-bold">Practical Training</h4>
             </div>
-            <p class="text-gray-300">Learn and get certified with practical from experienced mentors through hands-on training, webinars, and step-by-step guidance.</p>
+            <p class="text-gray-300">Learn from experienced mentors through hands-on training, webinars, and step-by-step guidance.</p>
         </div>
 
         <!-- Incentives for Growth -->
@@ -796,7 +825,7 @@ body {
 </section>
 
 <!-- Blockchain Technology & Cryptocurrency Section -->
-<section class="container mx-auto px-4 py-20">
+<section id="airdrop" class="container mx-auto px-4 py-20">
     <h2 class="text-4xl font-bold text-center mb-16">Blockchain Technology & Cryptocurrency</h2>
     
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -809,7 +838,7 @@ body {
                 <h3 class="text-2xl font-bold">Blockchain Infrastructure</h3>
             </div>
             <ul class="space-y-3 text-gray-300">
-                <li>• Built on BSC Network</li>
+                <li>• Built on Ethereum Network</li>
                 <li>• Smart Contract Automation</li>
                 <li>• Cross-chain Compatibility</li>
                 <li>• Layer 2 Scaling Solutions</li>
@@ -826,7 +855,7 @@ body {
             </div>
             <ul class="space-y-3 text-gray-300">
                 <li>• USDT & USDC</li>
-                <li>• PADC(coming soon)</li>
+                <li>• ETH & Wrapped BTC</li>
                 <li>• Native DTFS Token</li>
                 <li>• Major Stablecoins</li>
             </ul>
@@ -989,7 +1018,7 @@ body {
                 </svg>
             </button>
             <div class="faq-answer">
-                <p>DTFS is a platform offering secure, non-interest trade financing solutions that connect businesses with easy, transparent, and flexible financial tools.</p>
+                <p>DTFS is a platform offering secure, Shariah-compliant trade financing solutions that connect businesses with easy, transparent, and flexible financial tools.</p>
             </div>
         </div>
 
@@ -1079,18 +1108,116 @@ body {
 
 <!-- Registration Form -->
 <section id="register" class="container mx-auto px-4 py-20">
-    <div class="max-w-4xl mx-auto bg-white/10 backdrop-blur-lg rounded-lg p-8">
+    <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl font-bold mb-8 text-center">Register for Early Access</h2>
-        <!-- Google Form Embed -->
-        <div class="aspect-[4/3] w-full">
-            <iframe 
-                src="https://docs.google.com/forms/d/e/1FAIpQLSdzWfp9ds_YE7-8N4HNVQV5cc8ZRpaZJT7UWgdJ5NCbLjotHw/viewform?usp=pp_url" 
-                class="w-full h-full rounded-lg"
-                frameborder="0" 
-                marginheight="0" 
-                marginwidth="0">
-                Loading…
-            </iframe>
+        <div class="bg-white/10 backdrop-blur-lg rounded-lg p-8">
+            <!-- Embedded Google Form -->
+            <div class="aspect-w-16 aspect-h-9">
+                <iframe 
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSdzWfp9ds_YE7-8N4HNVQV5cc8ZRpaZJT7UWgdJ5NCbLjotHw/viewform?usp=pp_url" 
+                    class="w-full min-h-[800px] border-0 rounded-lg"
+                    frameborder="0" 
+                    marginheight="0" 
+                    marginwidth="0">
+                    Loading…
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Interactive Demo Section -->
+<section id="demo" class="container mx-auto px-4 py-20">
+    <h2 class="text-4xl font-bold text-center mb-16">Experience DTFS in Action</h2>
+    <div class="max-w-4xl mx-auto">
+        <!-- Demo Container -->
+        <div class="bg-white/5 backdrop-blur-lg rounded-xl p-8 border border-white/10 card-3d">
+            <div class="text-center mb-8">
+                <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+                    Interactive Platform Demo
+                </h3>
+                <p class="text-gray-300 mb-6">
+                    Get a firsthand look at how DTFS is revolutionizing trade finance. Explore our platform's key features and intuitive interface.
+                </p>
+                <!-- Disclaimer -->
+                <div class="text-sm text-yellow-400 mb-8 p-4 bg-yellow-400/10 rounded-lg inline-block">
+                    <svg class="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    This demo is a simplified representation of the platform under development.
+                </div>
+            </div>
+
+            <!-- Demo Features Grid -->
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Trade Finance Demo -->
+                <div class="bg-white/10 backdrop-blur-lg rounded-lg p-6 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-1 card-3d">
+                    <h4 class="text-xl font-bold mb-4">Trade Finance Portal</h4>
+                    <p class="text-gray-300 mb-4">Experience our streamlined trade finance application and management interface.</p>
+                    <a href="https://demo.dtfs.finance/trade-finance" class="inline-flex items-center bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition-colors duration-300">
+                        <span>Launch Demo</span>
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Smart Contract Demo -->
+                <div class="bg-white/10 backdrop-blur-lg rounded-lg p-6 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-1 card-3d">
+                    <h4 class="text-xl font-bold mb-4">Smart Contract Explorer</h4>
+                    <p class="text-gray-300 mb-4">See how our smart contracts automate and secure trade finance transactions.</p>
+                    <a href="https://demo.dtfs.finance/smart-contracts" class="inline-flex items-center bg-purple-500 hover:bg-purple-600 text-white px-6 py-3 rounded-lg transition-colors duration-300">
+                        <span>Explore Contracts</span>
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Documentation -->
+                <div class="bg-white/10 backdrop-blur-lg rounded-lg p-6 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-1 card-3d">
+                    <h4 class="text-xl font-bold mb-4">API Documentation</h4>
+                    <p class="text-gray-300 mb-4">Browse our comprehensive API documentation and integration guides.</p>
+                    <a href="https://docs.dtfs.finance" class="inline-flex items-center bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg transition-colors duration-300">
+                        <span>View Docs</span>
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Platform Overview -->
+                <div class="bg-white/10 backdrop-blur-lg rounded-lg p-6 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-1 card-3d">
+                    <h4 class="text-xl font-bold mb-4">Platform Overview</h4>
+                    <p class="text-gray-300 mb-4">Watch a comprehensive walkthrough of the DTFS platform features.</p>
+                    <a href="https://demo.dtfs.finance/overview" class="inline-flex items-center bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-lg transition-colors duration-300">
+                        <span>Watch Demo</span>
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Demo Stats -->
+            <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="text-center p-4 bg-white/5 rounded-lg">
+                    <div class="text-2xl font-bold text-blue-400">5,000+</div>
+                    <div class="text-sm text-gray-400">Demo Users</div>
+                </div>
+                <div class="text-center p-4 bg-white/5 rounded-lg">
+                    <div class="text-2xl font-bold text-purple-400">98%</div>
+                    <div class="text-sm text-gray-400">Positive Feedback</div>
+                </div>
+                <div class="text-center p-4 bg-white/5 rounded-lg">
+                    <div class="text-2xl font-bold text-green-400">24/7</div>
+                    <div class="text-sm text-gray-400">Demo Access</div>
+                </div>
+                <div class="text-center p-4 bg-white/5 rounded-lg">
+                    <div class="text-2xl font-bold text-yellow-400">4.8/5</div>
+                    <div class="text-sm text-gray-400">User Rating</div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -1152,6 +1279,7 @@ body {
                 <ul class="space-y-2">
                     <li><a href="#features" class="text-gray-400 hover:text-blue-400 transition-colors">Features</a></li>
                     <li><a href="#financing" class="text-gray-400 hover:text-blue-400 transition-colors">Financing Options</a></li>
+                    <li><a href="#startup" class="text-gray-400 hover:text-blue-400 transition-colors">Startup Services</a></li>
                     <li><a href="#benefits" class="text-gray-400 hover:text-blue-400 transition-colors">Benefits</a></li>
                     <li><a href="#faq" class="text-gray-400 hover:text-blue-400 transition-colors">FAQ</a></li>
                     <li><a href="#register" class="text-gray-400 hover:text-blue-400 transition-colors">Register</a></li>
@@ -1166,11 +1294,11 @@ body {
                         <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                         </svg>
-                        support@dtfs.online
+                        contact@dtfs.online
                     </li>
                     <li class="flex items-center">
                         <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5l7.5 7.5H19a2 2 0 01-2 2H9a2 2 0 01-2-2H4.5L12 5z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5l5 5h-3v7h-4v-7H7l5-5z"/>
                         </svg>
                         +123 456 7890
                     </li>
@@ -1182,7 +1310,7 @@ body {
 
 <script>
 // Set the countdown date (90 days from now)
-const countdownDate = new Date().getTime() + (75 * 24 * 60 * 60 * 1000);
+const countdownDate = new Date().getTime() + (90 * 24 * 60 * 60 * 1000);
 
 function updateCountdown() {
   const now = new Date().getTime();
